@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## checks if the determinant of the matrix is non-zero 
+## Check if the determinant of the matrix is non-zero 
 ## stores the initial matrix in the variable ini_x
 ## calculates the inverse of the matrix and stores it in variable inv_x
 ## If determinant is zero the inverse cannot be calculated. Throws a message
@@ -17,11 +14,10 @@ makeCacheMatrix <- function(x) {
 }
 
 
-## Write a short comment describing this function
-##Check if there is no cached matrix ini_x or inv_x or 
+##Check if there is no cached matrix ini_x or inv_x or... 
 ##      if new matrix x is not identical with the cached matrix ini_x
-##run makeCacheMatrix
-## else return cached value inv_x
+##in any of these cases run makeCacheMatrix
+## otherwise return cached value inv_x
 
 cacheSolve <- function(x, ...) {
       if(!identical(x, ini_x) | !exists("ini_x") | !exists("inv_x")) {
